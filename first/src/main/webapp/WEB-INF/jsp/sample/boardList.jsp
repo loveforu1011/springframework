@@ -9,19 +9,24 @@
 </head>
 <body>
 
-<table><tr><td>번호</td><td>작성자</td><td>제목</td><td>작성시간</td><td>조회수</td></tr>
+	<table>
+		<tr>
+			<td>번호</td>
+			<td>작성자</td>
+			<td>제목</td>
+			<td>작성시간</td>
+			<td>조회수</td>
+		</tr>
 
-<c:forEach var="lists" items="${list}">
-	<tr>
-	<c:forEach var="list_temp" items="${lists}">
-	<td>
-	${list_temp.value}&nbsp;
-	</td>
-	</c:forEach>
-	</tr>
-	<p>
-</c:forEach>
-</table>
+		<c:forEach var="lists" items="${list}">
+			<tr>
+				<c:forEach var="list_temp" items="${lists}">
+					${list_temp}
+				</c:forEach>
+			</tr>
+			<p>
+		</c:forEach>
+	</table>
 
 </body>
 </html>
