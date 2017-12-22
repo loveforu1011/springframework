@@ -33,7 +33,7 @@
 			</c:forEach>
 		</table>
 	</div>
-	<p>
+	<p><p>
 	<p>
 	<div>
 		<c:forEach var="onemap" items="${list}">
