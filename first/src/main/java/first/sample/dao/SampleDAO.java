@@ -17,8 +17,8 @@ public class SampleDAO extends AbstractDAO {
 		int page = 1;
 		if(map.get("pageid") != null)
 			page = Integer.parseInt(map.get("pageid").toString());
-		int startcnt = page * perpage - 4;
-		int endcnt = page * perpage;
+		int startcnt = page*perpage-4;
+		int endcnt = page*perpage;
 		map.put("startcnt", startcnt);
 		map.put("endcnt", endcnt);
 		List<Map<String, Object>> temp = (List<Map<String, Object>>)selectList("sample.selectBoardList",map);
